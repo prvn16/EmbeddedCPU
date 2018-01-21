@@ -1,0 +1,11 @@
+rtiostream_utils.c.o: \
+ C:/PROGRA~1/MATLAB/R2017b/toolbox/coder/rtiostream/src/utils/rtiostream_utils.c \
+ C:/PROGRA~1/MATLAB/R2017b/toolbox/coder/rtiostream/src/utils/rtiostream_utils.h \
+ C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/slprj/ert/_sharedutils/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2017b/rtw/c/src/rtiostream.h
+
+C:/PROGRA~1/MATLAB/R2017b/toolbox/coder/rtiostream/src/utils/rtiostream_utils.h:
+
+C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/slprj/ert/_sharedutils/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2017b/rtw/c/src/rtiostream.h:

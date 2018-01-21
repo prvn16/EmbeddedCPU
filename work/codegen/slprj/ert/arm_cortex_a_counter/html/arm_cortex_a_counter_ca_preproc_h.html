@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="./js/coder_app.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="./rtwreport_utils.js"></script>
+<script type="text/javascript" src="./rtwannotate.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/coder_app.css"/>
+</head>
+<body onload="srcFileOnload();">
+<pre id="code">
+<table class="code" id="codeTbl">
+<tr name="1" id="1">
+<td><a id="l1" class='ln'>1</a></td><td><span class="ct">/*</span></td></tr>
+<tr name="2" id="2">
+<td><a id="l2" class='ln'>2</a></td><td><span class="ct"> * File: arm_cortex_a_counter_ca_preproc.h</span></td></tr>
+<tr name="3" id="3">
+<td><a id="l3" class='ln'>3</a></td><td><span class="ct"> *</span></td></tr>
+<tr name="4" id="4">
+<td><a id="l4" class='ln'>4</a></td><td><span class="ct"> * Abstract: Preprocessor checks for hardware implementation settings.</span></td></tr>
+<tr name="5" id="5">
+<td><a id="l5" class='ln'>5</a></td><td><span class="ct"> *</span></td></tr>
+<tr name="6" id="6">
+<td><a id="l6" class='ln'>6</a></td><td><span class="ct"> * Hardware Implementation Specification:</span></td></tr>
+<tr name="7" id="7">
+<td><a id="l7" class='ln'>7</a></td><td><span class="ct"> *</span></td></tr>
+<tr name="8" id="8">
+<td><a id="l8" class='ln'>8</a></td><td><span class="ct"> * HWDeviceType: ARM Compatible-&gt;ARM Cortex</span></td></tr>
+<tr name="9" id="9">
+<td><a id="l9" class='ln'>9</a></td><td><span class="ct"> * PortableWordSizes: on</span></td></tr>
+<tr name="10" id="10">
+<td><a id="l10" class='ln'>10</a></td><td><span class="ct"> * PreprocMaxBitsUint: 32</span></td></tr>
+<tr name="11" id="11">
+<td><a id="l11" class='ln'>11</a></td><td><span class="ct"> * PreprocMaxBitsSint: 32</span></td></tr>
+<tr name="12" id="12">
+<td><a id="l12" class='ln'>12</a></td><td><span class="ct"> * BitPerChar: 8</span></td></tr>
+<tr name="13" id="13">
+<td><a id="l13" class='ln'>13</a></td><td><span class="ct"> * BitPerShort: 16</span></td></tr>
+<tr name="14" id="14">
+<td><a id="l14" class='ln'>14</a></td><td><span class="ct"> * BitPerInt: 32</span></td></tr>
+<tr name="15" id="15">
+<td><a id="l15" class='ln'>15</a></td><td><span class="ct"> * BitPerLong: 32</span></td></tr>
+<tr name="16" id="16">
+<td><a id="l16" class='ln'>16</a></td><td><span class="ct"> * LongLongMode: off</span></td></tr>
+<tr name="17" id="17">
+<td><a id="l17" class='ln'>17</a></td><td><span class="ct"> * BitPerLongLong: 64</span></td></tr>
+<tr name="18" id="18">
+<td><a id="l18" class='ln'>18</a></td><td><span class="ct"> */</span></td></tr>
+<tr name="19" id="19">
+<td><a id="l19" class='ln'>19</a></td><td></td></tr>
+<tr name="20" id="20">
+<td><a id="l20" class='ln'>20</a></td><td><span class="pp">#ifndef</span> <a id="20c9" class="tk">ARM_CORTEX_A_COUNTER_CA_PREPROC_H</a></td></tr>
+<tr name="21" id="21">
+<td><a id="l21" class='ln'>21</a></td><td><span class="pp">#define</span> <a id="21c9" class="tk">ARM_CORTEX_A_COUNTER_CA_PREPROC_H</a></td></tr>
+<tr name="22" id="22">
+<td><a id="l22" class='ln'>22</a></td><td><span class="pp">#ifndef</span> <a id="22c9" class="tk">PORTABLE_WORDSIZES</a></td></tr>
+<tr name="23" id="23">
+<td><a id="l23" class='ln'>23</a></td><td></td></tr>
+<tr name="24" id="24">
+<td><a id="l24" class='ln'>24</a></td><td><span class="ct">/* make sure limits are available */</span></td></tr>
+<tr name="25" id="25">
+<td><a id="l25" class='ln'>25</a></td><td><span class="pp">#ifndef</span> <a id="25c9" class="tk">UCHAR_MAX</a></td></tr>
+<tr name="26" id="26">
+<td><a id="l26" class='ln'>26</a></td><td><span class="pp">#include &lt;limits.h&gt;</span></td></tr>
+<tr name="27" id="27">
+<td><a id="l27" class='ln'>27</a></td><td><span class="pp">#endif</span></td></tr>
+<tr name="28" id="28">
+<td><a id="l28" class='ln'>28</a></td><td></td></tr>
+<tr name="29" id="29">
+<td><a id="l29" class='ln'>29</a></td><td><span class="pp">#if</span> (<a id="29c6" class="tk">UCHAR_MAX</a> <a id="29c16" class="tk">!=</a> (0xFFU)) <a id="29c28" class="tk">||</a> (<a id="29c32" class="tk">SCHAR_MAX</a> <a id="29c42" class="tk">!=</a> (0x7F))</td></tr>
+<tr name="30" id="30">
+<td><a id="l30" class='ln'>30</a></td><td><span class="pp">#error</span> <a id="30c8" class="tk">Code</a> <a id="30c13" class="tk">was</a> <a id="30c17" class="tk">generated</a> <span class="kw">for</span> <a id="30c31" class="tk">compiler</a> <a id="30c40" class="tk">with</a> <a id="30c45" class="tk">different</a> <a id="30c55" class="tk">sized</a> <a id="30c61" class="tk">uchar</a><a id="30c66" class="tk">/</a><span class="kw">char</span>. \</td></tr>
+<tr name="31" id="31">
+<td><a id="l31" class='ln'>31</a></td><td><a id="31c73" class="tk">Consider</a> <a id="31c82" class="tk">adjusting</a> <a id="31c92" class="tk">Hardware</a> <a id="31c101" class="tk">Implementation</a> <a id="31c116" class="tk">data</a> <a id="31c121" class="tk">type</a> <a id="31c126" class="tk">sizes</a> <a id="31c132" class="tk">to</a> \</td></tr>
+<tr name="32" id="32">
+<td><a id="l32" class='ln'>32</a></td><td><a id="32c135" class="tk">match</a> <a id="32c141" class="tk">your</a> <a id="32c146" class="tk">compiler</a> (<a id="32c156" class="tk">defined</a> <a id="32c164" class="tk">in</a> <a id="32c167" class="tk">limits</a>.<a id="32c174" class="tk">h</a>).</td></tr>
+<tr name="33" id="33">
+<td><a id="l33" class='ln'>33</a></td><td><span class="pp">#endif</span></td></tr>
+<tr name="34" id="34">
+<td><a id="l34" class='ln'>34</a></td><td></td></tr>
+<tr name="35" id="35">
+<td><a id="l35" class='ln'>35</a></td><td><span class="pp">#if</span> (<a id="35c6" class="tk">USHRT_MAX</a> <a id="35c16" class="tk">!=</a> (0xFFFFU)) <a id="35c30" class="tk">||</a> (<a id="35c34" class="tk">SHRT_MAX</a> <a id="35c43" class="tk">!=</a> (0x7FFF))</td></tr>
+<tr name="36" id="36">
+<td><a id="l36" class='ln'>36</a></td><td><span class="pp">#error</span> <a id="36c8" class="tk">Code</a> <a id="36c13" class="tk">was</a> <a id="36c17" class="tk">generated</a> <span class="kw">for</span> <a id="36c31" class="tk">compiler</a> <a id="36c40" class="tk">with</a> <a id="36c45" class="tk">different</a> <a id="36c55" class="tk">sized</a> <a id="36c61" class="tk">ushort</a><a id="36c67" class="tk">/</a><span class="kw">short</span>. \</td></tr>
+<tr name="37" id="37">
+<td><a id="l37" class='ln'>37</a></td><td><a id="37c75" class="tk">Consider</a> <a id="37c84" class="tk">adjusting</a> <a id="37c94" class="tk">Hardware</a> <a id="37c103" class="tk">Implementation</a> <a id="37c118" class="tk">data</a> <a id="37c123" class="tk">type</a> <a id="37c128" class="tk">sizes</a> <a id="37c134" class="tk">to</a> \</td></tr>
+<tr name="38" id="38">
+<td><a id="l38" class='ln'>38</a></td><td><a id="38c137" class="tk">match</a> <a id="38c143" class="tk">your</a> <a id="38c148" class="tk">compiler</a> (<a id="38c158" class="tk">defined</a> <a id="38c166" class="tk">in</a> <a id="38c169" class="tk">limits</a>.<a id="38c176" class="tk">h</a>).</td></tr>
+<tr name="39" id="39">
+<td><a id="l39" class='ln'>39</a></td><td><span class="pp">#endif</span></td></tr>
+<tr name="40" id="40">
+<td><a id="l40" class='ln'>40</a></td><td></td></tr>
+<tr name="41" id="41">
+<td><a id="l41" class='ln'>41</a></td><td><span class="pp">#if</span> (<a id="41c6" class="tk">UINT_MAX</a> <a id="41c15" class="tk">!=</a> (0xFFFFFFFFU)) <a id="41c33" class="tk">||</a> (<a id="41c37" class="tk">INT_MAX</a> <a id="41c45" class="tk">!=</a> (0x7FFFFFFF))</td></tr>
+<tr name="42" id="42">
+<td><a id="l42" class='ln'>42</a></td><td><span class="pp">#error</span> <a id="42c8" class="tk">Code</a> <a id="42c13" class="tk">was</a> <a id="42c17" class="tk">generated</a> <span class="kw">for</span> <a id="42c31" class="tk">compiler</a> <a id="42c40" class="tk">with</a> <a id="42c45" class="tk">different</a> <a id="42c55" class="tk">sized</a> <a id="42c61" class="tk">uint</a><a id="42c65" class="tk">/</a><span class="kw">int</span>. \</td></tr>
+<tr name="43" id="43">
+<td><a id="l43" class='ln'>43</a></td><td><a id="43c71" class="tk">Consider</a> <a id="43c80" class="tk">adjusting</a> <a id="43c90" class="tk">Hardware</a> <a id="43c99" class="tk">Implementation</a> <a id="43c114" class="tk">data</a> <a id="43c119" class="tk">type</a> <a id="43c124" class="tk">sizes</a> <a id="43c130" class="tk">to</a> \</td></tr>
+<tr name="44" id="44">
+<td><a id="l44" class='ln'>44</a></td><td><a id="44c133" class="tk">match</a> <a id="44c139" class="tk">your</a> <a id="44c144" class="tk">compiler</a> (<a id="44c154" class="tk">defined</a> <a id="44c162" class="tk">in</a> <a id="44c165" class="tk">limits</a>.<a id="44c172" class="tk">h</a>).</td></tr>
+<tr name="45" id="45">
+<td><a id="l45" class='ln'>45</a></td><td><span class="pp">#endif</span></td></tr>
+<tr name="46" id="46">
+<td><a id="l46" class='ln'>46</a></td><td></td></tr>
+<tr name="47" id="47">
+<td><a id="l47" class='ln'>47</a></td><td><span class="pp">#if</span> (<a id="47c6" class="tk">ULONG_MAX</a> <a id="47c16" class="tk">!=</a> (0xFFFFFFFFU)) <a id="47c34" class="tk">||</a> (<a id="47c38" class="tk">LONG_MAX</a> <a id="47c47" class="tk">!=</a> (0x7FFFFFFF))</td></tr>
+<tr name="48" id="48">
+<td><a id="l48" class='ln'>48</a></td><td><span class="pp">#error</span> <a id="48c8" class="tk">Code</a> <a id="48c13" class="tk">was</a> <a id="48c17" class="tk">generated</a> <span class="kw">for</span> <a id="48c31" class="tk">compiler</a> <a id="48c40" class="tk">with</a> <a id="48c45" class="tk">different</a> <a id="48c55" class="tk">sized</a> <a id="48c61" class="tk">ulong</a><a id="48c66" class="tk">/</a><span class="kw">long</span>. \</td></tr>
+<tr name="49" id="49">
+<td><a id="l49" class='ln'>49</a></td><td><a id="49c73" class="tk">Consider</a> <a id="49c82" class="tk">adjusting</a> <a id="49c92" class="tk">Hardware</a> <a id="49c101" class="tk">Implementation</a> <a id="49c116" class="tk">data</a> <a id="49c121" class="tk">type</a> <a id="49c126" class="tk">sizes</a> <a id="49c132" class="tk">to</a> \</td></tr>
+<tr name="50" id="50">
+<td><a id="l50" class='ln'>50</a></td><td><a id="50c135" class="tk">match</a> <a id="50c141" class="tk">your</a> <a id="50c146" class="tk">compiler</a> (<a id="50c156" class="tk">defined</a> <a id="50c164" class="tk">in</a> <a id="50c167" class="tk">limits</a>.<a id="50c174" class="tk">h</a>).</td></tr>
+<tr name="51" id="51">
+<td><a id="l51" class='ln'>51</a></td><td><span class="pp">#endif</span></td></tr>
+<tr name="52" id="52">
+<td><a id="l52" class='ln'>52</a></td><td><span class="pp">#endif</span>                                 <span class="ct">/* !PORTABLE_WORDSIZES */</span></td></tr>
+<tr name="53" id="53">
+<td><a id="l53" class='ln'>53</a></td><td><span class="pp">#endif</span>                                 <span class="ct">/* ARM_CORTEX_A_COUNTER_CA_PREPROC_H */</span></td></tr>
+<tr name="54" id="54">
+<td><a id="l54" class='ln'>54</a></td><td></td></tr>
+</table>
+</pre>
+</body>
+</html>

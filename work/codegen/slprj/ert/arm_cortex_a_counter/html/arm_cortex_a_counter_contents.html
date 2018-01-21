@@ -1,0 +1,568 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript" defer="defer">
+    function rtwFileListShrink(o, category, numFiles)
+    {
+        var indent = document.getElementById(category + "_indent");
+        var fileTable = document.getElementById(category + "_table");
+        var catName = document.getElementById(category + "_name");
+        if (fileTable.style.display == "none") {
+            fileTable.style.display = "";
+            indent.style.display = "";
+            o.innerHTML = '<span style="font-family:monospace" id = "' + category + '_button">[-]</span>';
+            catName.innerHTML = "<b>" + category + "</b>";
+        } else {
+            fileTable.style.display = "none";
+            indent.style.display = "none";
+            o.innerHTML = '<span style="font-family:monospace" id = "' + category + '_button">[+]</span>';
+            catName.innerHTML = "<b>" + category + " (" + numFiles + ")" + "</b>";
+        }
+    }
+</script>
+
+</head>
+<body bgcolor="#eeeeee" link="#0033cc" vlink="#666666" rightmargin="0">
+<table class="toc" border="1">
+<tr>
+<td align="left" valign="top">
+<b>
+Contents
+</b>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="rtwmsg.html" id="rtwIdMsgFileLink" style="display: none" target="rtwreport_document_frame" onclick="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, true);" name="TOC_List">
+Block-to-code Message
+</a>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="arm_cortex_a_counter_survey.html" id="rtwIdSummaryPage" target="rtwreport_document_frame" onclick="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, true);" name="TOC_List">
+Summary
+</a>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="arm_cortex_a_counter_subsystems.html" id="rtwIdSubsystem" target="rtwreport_document_frame" onclick="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, true);" name="TOC_List">
+Subsystem Report
+</a>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="arm_cortex_a_counter_trace.html" id="rtwIdTraceability" target="rtwreport_document_frame" onclick="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, true);" name="TOC_List">
+Traceability Report
+</a>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="arm_cortex_a_counter_metrics.html" id="rtwIdCodeMetrics" target="rtwreport_document_frame" onclick="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, true);" name="TOC_List">
+Static Code Metrics Report
+</a>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="arm_cortex_a_counter_replacements.html" id="rtwIdCodeReplacements" target="rtwreport_document_frame" onclick="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, true);" name="TOC_List">
+Code Replacements Report
+</a>
+
+</td>
+
+</tr>
+
+</table>
+<!--ADD_CODE_PROFILE_REPORT_LINK_HERE--><hr /><table cellspacing="0" cellpadding="4" width="100%" bgcolor="#ffffff" border="0">
+<tr>
+<td align="left" valign="top">
+<b>
+Generated Code
+</b>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table cellspacing="0" cellpadding="1" width="100%" bgcolor="#ffffff" id="Model files" border="0">
+<tr>
+<td width="0%" align="left" valign="top">
+<span style="background-color:#ffffff;width:100%;cursor:pointer;white-space:nowrap" title="Click to shrink or expand category" onclick="rtwFileListShrink(this,'Model files','2')"><span style="font-family:monospace" id = "Model files_button">[-]</span></span>
+</td>
+<td width="100%" align="left" valign="top">
+<span id="Model files_name"><b>Model files</b></span>
+</td>
+
+</tr>
+<tr>
+<td width="0%" align="left" valign="top">
+<span id="Model files_indent"></span>
+</td>
+<td width="100%" align="left" valign="top">
+<table cellspacing="0" cellpadding="4" width="100%" bgcolor="#ffffff" id="Model files_table" border="0">
+<tr>
+<td align="left" valign="top">
+<A HREF="arm_cortex_a_counter_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="arm_cortex_a_counter_c.html" NAME="rtwIdGenFileLinks">
+arm_cortex_a_counter.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="arm_cortex_a_counter_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="arm_cortex_a_counter_h.html" NAME="rtwIdGenFileLinks">
+arm_cortex_a_counter.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table cellspacing="0" cellpadding="1" width="100%" bgcolor="#ffffff" id="Shared files" border="0">
+<tr>
+<td width="0%" align="left" valign="top">
+<span style="background-color:#ffffff;width:100%;cursor:pointer;white-space:nowrap" title="Click to shrink or expand category" onclick="rtwFileListShrink(this,'Shared files','1')"><span style="font-family:monospace" id = "Shared files_button">[+]</span></span>
+</td>
+<td width="100%" align="left" valign="top">
+<span id="Shared files_name"><b>Shared files (1)</b></span>
+</td>
+
+</tr>
+<tr>
+<td width="0%" align="left" valign="top">
+<span id="Shared files_indent"></span>
+</td>
+<td width="100%" align="left" valign="top">
+<table cellspacing="0" cellpadding="4" width="100%" bgcolor="#ffffff" id="Shared files_table" style="display:none" border="0">
+<tr>
+<td align="left" valign="top">
+<A HREF="../../_sharedutils/html/rtwtypes_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="rtwtypes_h.html" NAME="rtwIdGenFileLinks">
+rtwtypes.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table cellspacing="0" cellpadding="1" width="100%" bgcolor="#ffffff" id="Other files" border="0">
+<tr>
+<td width="0%" align="left" valign="top">
+<span style="background-color:#ffffff;width:100%;cursor:pointer;white-space:nowrap" title="Click to shrink or expand category" onclick="rtwFileListShrink(this,'Other files','1')"><span style="font-family:monospace" id = "Other files_button">[+]</span></span>
+</td>
+<td width="100%" align="left" valign="top">
+<span id="Other files_name"><b>Other files (1)</b></span>
+</td>
+
+</tr>
+<tr>
+<td width="0%" align="left" valign="top">
+<span id="Other files_indent"></span>
+</td>
+<td width="100%" align="left" valign="top">
+<table cellspacing="0" cellpadding="4" width="100%" bgcolor="#ffffff" id="Other files_table" style="display:none" border="0">
+<tr>
+<td align="left" valign="top">
+<A HREF="MW_target_hardware_resources_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="MW_target_hardware_resources_h.html" NAME="rtwIdGenFileLinks">
+MW_target_hardware_resources.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table cellspacing="0" cellpadding="1" width="100%" bgcolor="#ffffff" id="SIL/PIL files" border="0">
+<tr>
+<td width="0%" align="left" valign="top">
+<span style="background-color:#ffffff;width:100%;cursor:pointer;white-space:nowrap" title="Click to shrink or expand category" onclick="rtwFileListShrink(this,'SIL/PIL files','34')"><span style="font-family:monospace" id = "SIL/PIL files_button">[+]</span></span>
+</td>
+<td width="100%" align="left" valign="top">
+<span id="SIL/PIL files_name"><b>SIL/PIL files (34)</b></span>
+</td>
+
+</tr>
+<tr>
+<td width="0%" align="left" valign="top">
+<span id="SIL/PIL files_indent"></span>
+</td>
+<td width="100%" align="left" valign="top">
+<table cellspacing="0" cellpadding="4" width="100%" bgcolor="#ffffff" id="SIL/PIL files_table" style="display:none" border="0">
+<tr>
+<td align="left" valign="top">
+<A HREF="CoderAssumpTgtAppSvc_CInterface_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="CoderAssumpTgtAppSvc_CInterface_h.html" NAME="rtwIdGenFileLinks">
+CoderAssumpTgtAppSvc_CInterface.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="XILTgtAppSvc_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="XILTgtAppSvc_h.html" NAME="rtwIdGenFileLinks">
+XILTgtAppSvc.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="XILTgtAppSvc_CInterface_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="XILTgtAppSvc_CInterface_h.html" NAME="rtwIdGenFileLinks">
+XILTgtAppSvc_CInterface.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="arm_cortex_a_counter_ca_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="arm_cortex_a_counter_ca_c.html" NAME="rtwIdGenFileLinks">
+arm_cortex_a_counter_ca.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="arm_cortex_a_counter_ca_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="arm_cortex_a_counter_ca_h.html" NAME="rtwIdGenFileLinks">
+arm_cortex_a_counter_ca.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="arm_cortex_a_counter_ca_preproc_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="arm_cortex_a_counter_ca_preproc_h.html" NAME="rtwIdGenFileLinks">
+arm_cortex_a_counter_ca_preproc.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="arm_cortex_a_counter_psf_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="arm_cortex_a_counter_psf_c.html" NAME="rtwIdGenFileLinks">
+arm_cortex_a_counter_psf.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="coder_assumptions_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="coder_assumptions_h.html" NAME="rtwIdGenFileLinks">
+coder_assumptions.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="coder_assumptions_app_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="coder_assumptions_app_c.html" NAME="rtwIdGenFileLinks">
+coder_assumptions_app.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="coder_assumptions_app_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="coder_assumptions_app_h.html" NAME="rtwIdGenFileLinks">
+coder_assumptions_app.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="coder_assumptions_data_stream_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="coder_assumptions_data_stream_c.html" NAME="rtwIdGenFileLinks">
+coder_assumptions_data_stream.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="coder_assumptions_data_stream_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="coder_assumptions_data_stream_h.html" NAME="rtwIdGenFileLinks">
+coder_assumptions_data_stream.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="coder_assumptions_hwimpl_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="coder_assumptions_hwimpl_c.html" NAME="rtwIdGenFileLinks">
+coder_assumptions_hwimpl.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="coder_assumptions_hwimpl_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="coder_assumptions_hwimpl_h.html" NAME="rtwIdGenFileLinks">
+coder_assumptions_hwimpl.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="coder_assumptions_rtiostream_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="coder_assumptions_rtiostream_c.html" NAME="rtwIdGenFileLinks">
+coder_assumptions_rtiostream.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="comms_interface_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="comms_interface_h.html" NAME="rtwIdGenFileLinks">
+comms_interface.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="pil_main_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="pil_main_c.html" NAME="rtwIdGenFileLinks">
+pil_main.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="rtiostream_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="rtiostream_h.html" NAME="rtwIdGenFileLinks">
+rtiostream.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="rtiostream_tcpip_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="rtiostream_tcpip_c.html" NAME="rtwIdGenFileLinks">
+rtiostream_tcpip.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="rtiostream_utils_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="rtiostream_utils_c.html" NAME="rtwIdGenFileLinks">
+rtiostream_utils.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="rtiostream_utils_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="rtiostream_utils_h.html" NAME="rtwIdGenFileLinks">
+rtiostream_utils.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="rx_tx_buffer_sizes_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="rx_tx_buffer_sizes_h.html" NAME="rtwIdGenFileLinks">
+rx_tx_buffer_sizes.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="xil_common_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="xil_common_h.html" NAME="rtwIdGenFileLinks">
+xil_common.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="xil_data_stream_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="xil_data_stream_c.html" NAME="rtwIdGenFileLinks">
+xil_data_stream.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="xil_data_stream_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="xil_data_stream_h.html" NAME="rtwIdGenFileLinks">
+xil_data_stream.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="xil_interface_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="xil_interface_c.html" NAME="rtwIdGenFileLinks">
+xil_interface.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="xil_interface_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="xil_interface_h.html" NAME="rtwIdGenFileLinks">
+xil_interface.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="xil_interface_common_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="xil_interface_common_h.html" NAME="rtwIdGenFileLinks">
+xil_interface_common.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="xil_interface_lib_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="xil_interface_lib_c.html" NAME="rtwIdGenFileLinks">
+xil_interface_lib.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="xil_interface_lib_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="xil_interface_lib_h.html" NAME="rtwIdGenFileLinks">
+xil_interface_lib.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="xil_interface_lib_private_h.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="xil_interface_lib_private_h.html" NAME="rtwIdGenFileLinks">
+xil_interface_lib_private.h
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="xil_rtiostream_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="xil_rtiostream_c.html" NAME="rtwIdGenFileLinks">
+xil_rtiostream.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="xil_services_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="xil_services_c.html" NAME="rtwIdGenFileLinks">
+xil_services.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A HREF="xilcomms_rtiostream_c.html" TARGET="rtwreport_document_frame" ONCLICK="if (top) if (top.tocHiliteMe) top.tocHiliteMe(window, this, false);" ID="xilcomms_rtiostream_c.html" NAME="rtwIdGenFileLinks">
+xilcomms_rtiostream.c
+</A>
+<span> </span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+<hr />
+</body>
+
+</html>

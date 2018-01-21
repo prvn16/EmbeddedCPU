@@ -1,0 +1,35 @@
+function RTW_rtwnameSIDMap() {
+	this.rtwnameHashMap = new Array();
+	this.sidHashMap = new Array();
+	this.rtwnameHashMap["<Root>"] = {sid: "Controller"};
+	this.sidHashMap["Controller"] = {rtwname: "<Root>"};
+	this.rtwnameHashMap["<S1>"] = {sid: "arm_cortex_a_pil_block:1"};
+	this.sidHashMap["arm_cortex_a_pil_block:1"] = {rtwname: "<S1>"};
+	this.rtwnameHashMap["<S1>/In1"] = {sid: "arm_cortex_a_pil_block:2"};
+	this.sidHashMap["arm_cortex_a_pil_block:2"] = {rtwname: "<S1>/In1"};
+	this.rtwnameHashMap["<S1>/Gain1"] = {sid: "arm_cortex_a_pil_block:3"};
+	this.sidHashMap["arm_cortex_a_pil_block:3"] = {rtwname: "<S1>/Gain1"};
+	this.rtwnameHashMap["<S1>/Gain2"] = {sid: "arm_cortex_a_pil_block:4"};
+	this.sidHashMap["arm_cortex_a_pil_block:4"] = {rtwname: "<S1>/Gain2"};
+	this.rtwnameHashMap["<S1>/Gain3"] = {sid: "arm_cortex_a_pil_block:5"};
+	this.sidHashMap["arm_cortex_a_pil_block:5"] = {rtwname: "<S1>/Gain3"};
+	this.rtwnameHashMap["<S1>/Gain4"] = {sid: "arm_cortex_a_pil_block:6"};
+	this.sidHashMap["arm_cortex_a_pil_block:6"] = {rtwname: "<S1>/Gain4"};
+	this.rtwnameHashMap["<S1>/Sum1"] = {sid: "arm_cortex_a_pil_block:7"};
+	this.sidHashMap["arm_cortex_a_pil_block:7"] = {rtwname: "<S1>/Sum1"};
+	this.rtwnameHashMap["<S1>/Sum2"] = {sid: "arm_cortex_a_pil_block:8"};
+	this.sidHashMap["arm_cortex_a_pil_block:8"] = {rtwname: "<S1>/Sum2"};
+	this.rtwnameHashMap["<S1>/Sum3"] = {sid: "arm_cortex_a_pil_block:9"};
+	this.sidHashMap["arm_cortex_a_pil_block:9"] = {rtwname: "<S1>/Sum3"};
+	this.rtwnameHashMap["<S1>/Unit Delay1"] = {sid: "arm_cortex_a_pil_block:10"};
+	this.sidHashMap["arm_cortex_a_pil_block:10"] = {rtwname: "<S1>/Unit Delay1"};
+	this.rtwnameHashMap["<S1>/Unit Delay2"] = {sid: "arm_cortex_a_pil_block:11"};
+	this.sidHashMap["arm_cortex_a_pil_block:11"] = {rtwname: "<S1>/Unit Delay2"};
+	this.rtwnameHashMap["<S1>/Unit Delay3"] = {sid: "arm_cortex_a_pil_block:12"};
+	this.sidHashMap["arm_cortex_a_pil_block:12"] = {rtwname: "<S1>/Unit Delay3"};
+	this.rtwnameHashMap["<S1>/Out1"] = {sid: "arm_cortex_a_pil_block:13"};
+	this.sidHashMap["arm_cortex_a_pil_block:13"] = {rtwname: "<S1>/Out1"};
+	this.getSID = function(rtwname) { return this.rtwnameHashMap[rtwname];}
+	this.getRtwname = function(sid) { return this.sidHashMap[sid];}
+}
+RTW_rtwnameSIDMap.instance = new RTW_rtwnameSIDMap();

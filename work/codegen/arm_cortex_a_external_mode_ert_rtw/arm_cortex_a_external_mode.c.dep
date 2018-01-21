@@ -1,0 +1,34 @@
+arm_cortex_a_external_mode.c.o: arm_cortex_a_external_mode.c \
+ arm_cortex_a_external_mode.h rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2017b/simulink/include/rtw_extmode.h \
+ C:/PROGRA~1/MATLAB/R2017b/simulink/include/sysran_types.h \
+ C:/PROGRA~1/MATLAB/R2017b/rtw/c/src/dt_info.h \
+ C:/PROGRA~1/MATLAB/R2017b/rtw/c/src/ext_mode/common/ext_work.h \
+ C:/PROGRA~1/MATLAB/R2017b/rtw/c/src/ext_mode/common/ext_types.h \
+ arm_cortex_a_external_mode_types.h multiword_types.h \
+ arm_cortex_a_external_mode_private.h arm_cortex_a_external_mode_dt.h \
+ C:/PROGRA~1/MATLAB/R2017b/rtw/c/src/ext_mode/common/ext_types.h
+
+arm_cortex_a_external_mode.h:
+
+rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2017b/simulink/include/rtw_extmode.h:
+
+C:/PROGRA~1/MATLAB/R2017b/simulink/include/sysran_types.h:
+
+C:/PROGRA~1/MATLAB/R2017b/rtw/c/src/dt_info.h:
+
+C:/PROGRA~1/MATLAB/R2017b/rtw/c/src/ext_mode/common/ext_work.h:
+
+C:/PROGRA~1/MATLAB/R2017b/rtw/c/src/ext_mode/common/ext_types.h:
+
+arm_cortex_a_external_mode_types.h:
+
+multiword_types.h:
+
+arm_cortex_a_external_mode_private.h:
+
+arm_cortex_a_external_mode_dt.h:
+
+C:/PROGRA~1/MATLAB/R2017b/rtw/c/src/ext_mode/common/ext_types.h:

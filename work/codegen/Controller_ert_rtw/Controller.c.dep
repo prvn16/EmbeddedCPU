@@ -1,0 +1,15 @@
+Controller.c.o: Controller.c Controller.h \
+ C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/slprj/ert/_sharedutils/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2017b/simulink/include/rtw_continuous.h \
+ C:/PROGRA~1/MATLAB/R2017b/simulink/include/rtw_solver.h \
+ C:/PROGRA~1/MATLAB/R2017b/simulink/include/rtw_continuous.h
+
+Controller.h:
+
+C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/slprj/ert/_sharedutils/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2017b/simulink/include/rtw_continuous.h:
+
+C:/PROGRA~1/MATLAB/R2017b/simulink/include/rtw_solver.h:
+
+C:/PROGRA~1/MATLAB/R2017b/simulink/include/rtw_continuous.h:

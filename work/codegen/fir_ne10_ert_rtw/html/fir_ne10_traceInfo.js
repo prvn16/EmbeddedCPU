@@ -1,0 +1,31 @@
+function RTW_rtwnameSIDMap() {
+	this.rtwnameHashMap = new Array();
+	this.sidHashMap = new Array();
+	this.rtwnameHashMap["<Root>"] = {sid: "fir_ne10"};
+	this.sidHashMap["fir_ne10"] = {rtwname: "<Root>"};
+	this.rtwnameHashMap["<S1>"] = {sid: "fir_ne10:1"};
+	this.sidHashMap["fir_ne10:1"] = {rtwname: "<S1>"};
+	this.rtwnameHashMap["<Root>/1 kHz Sine Wave"] = {sid: "fir_ne10:7"};
+	this.sidHashMap["fir_ne10:7"] = {rtwname: "<Root>/1 kHz Sine Wave"};
+	this.rtwnameHashMap["<Root>/3 kHz Sine Wave"] = {sid: "fir_ne10:8"};
+	this.sidHashMap["fir_ne10:8"] = {rtwname: "<Root>/3 kHz Sine Wave"};
+	this.rtwnameHashMap["<Root>/FIR"] = {sid: "fir_ne10:1"};
+	this.sidHashMap["fir_ne10:1"] = {rtwname: "<Root>/FIR"};
+	this.rtwnameHashMap["<Root>/Gaussian Noise"] = {sid: "fir_ne10:6"};
+	this.sidHashMap["fir_ne10:6"] = {rtwname: "<Root>/Gaussian Noise"};
+	this.rtwnameHashMap["<Root>/Matrix Concatenate"] = {sid: "fir_ne10:5"};
+	this.sidHashMap["fir_ne10:5"] = {rtwname: "<Root>/Matrix Concatenate"};
+	this.rtwnameHashMap["<Root>/Spectrum Analyzer"] = {sid: "fir_ne10:9"};
+	this.sidHashMap["fir_ne10:9"] = {rtwname: "<Root>/Spectrum Analyzer"};
+	this.rtwnameHashMap["<Root>/Sum1"] = {sid: "fir_ne10:10"};
+	this.sidHashMap["fir_ne10:10"] = {rtwname: "<Root>/Sum1"};
+	this.rtwnameHashMap["<S1>/In1"] = {sid: "fir_ne10:2"};
+	this.sidHashMap["fir_ne10:2"] = {rtwname: "<S1>/In1"};
+	this.rtwnameHashMap["<S1>/Discrete FIR Filter"] = {sid: "fir_ne10:3"};
+	this.sidHashMap["fir_ne10:3"] = {rtwname: "<S1>/Discrete FIR Filter"};
+	this.rtwnameHashMap["<S1>/Out1"] = {sid: "fir_ne10:4"};
+	this.sidHashMap["fir_ne10:4"] = {rtwname: "<S1>/Out1"};
+	this.getSID = function(rtwname) { return this.rtwnameHashMap[rtwname];}
+	this.getRtwname = function(sid) { return this.sidHashMap[sid];}
+}
+RTW_rtwnameSIDMap.instance = new RTW_rtwnameSIDMap();

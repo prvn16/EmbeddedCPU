@@ -1,0 +1,6 @@
+arm_cortex_a_counter.c.o: arm_cortex_a_counter.c arm_cortex_a_counter.h \
+ C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/slprj/ert/_sharedutils/rtwtypes.h
+
+arm_cortex_a_counter.h:
+
+C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/slprj/ert/_sharedutils/rtwtypes.h:
