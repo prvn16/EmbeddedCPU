@@ -1,0 +1,8 @@
+linuxinitialize.c.o: \
+ C:/PROGRA~1/MATLAB/R2017b/toolbox/target/codertarget/rtos/src/linuxinitialize.c \
+ C:/PROGRA~1/MATLAB/R2017b/toolbox/target/codertarget/rtos/inc/linuxinitialize.h \
+ C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/arm_cortex_a_profiling_ert_rtw/instrumented/MW_custom_RTOS_header.h
+
+C:/PROGRA~1/MATLAB/R2017b/toolbox/target/codertarget/rtos/inc/linuxinitialize.h:
+
+C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/arm_cortex_a_profiling_ert_rtw/instrumented/MW_custom_RTOS_header.h:

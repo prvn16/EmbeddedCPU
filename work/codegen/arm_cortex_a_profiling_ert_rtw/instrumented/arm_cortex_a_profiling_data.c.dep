@@ -1,0 +1,44 @@
+arm_cortex_a_profiling_data.c.o: arm_cortex_a_profiling_data.c \
+ arm_cortex_a_profiling.h rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2017b/rtw/c/src/rt_logging.h \
+ C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/arm_cortex_a_profiling_ert_rtw/instrumented/rtwtypes.h \
+ C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/arm_cortex_a_profiling_ert_rtw/instrumented/builtin_typeid_types.h \
+ C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/arm_cortex_a_profiling_ert_rtw/instrumented/rtwtypes.h \
+ C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/arm_cortex_a_profiling_ert_rtw/instrumented/multiword_types.h \
+ C:/PROGRA~1/MATLAB/R2017b/rtw/c/src/rt_mxclassid.h \
+ C:/PROGRA~1/MATLAB/R2017b/simulink/include/rtw_matlogging.h \
+ C:/PROGRA~1/MATLAB/R2017b/simulink/include/sl_types_def.h \
+ arm_cortex_a_profiling_types.h builtin_typeid_types.h multiword_types.h \
+ rt_nonfinite.h rtGetInf.h arm_cortex_a_profiling_private.h
+
+arm_cortex_a_profiling.h:
+
+rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2017b/rtw/c/src/rt_logging.h:
+
+C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/arm_cortex_a_profiling_ert_rtw/instrumented/rtwtypes.h:
+
+C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/arm_cortex_a_profiling_ert_rtw/instrumented/builtin_typeid_types.h:
+
+C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/arm_cortex_a_profiling_ert_rtw/instrumented/rtwtypes.h:
+
+C:/Sumpurn/Project/sEmbeddedCPU/work/codegen/arm_cortex_a_profiling_ert_rtw/instrumented/multiword_types.h:
+
+C:/PROGRA~1/MATLAB/R2017b/rtw/c/src/rt_mxclassid.h:
+
+C:/PROGRA~1/MATLAB/R2017b/simulink/include/rtw_matlogging.h:
+
+C:/PROGRA~1/MATLAB/R2017b/simulink/include/sl_types_def.h:
+
+arm_cortex_a_profiling_types.h:
+
+builtin_typeid_types.h:
+
+multiword_types.h:
+
+rt_nonfinite.h:
+
+rtGetInf.h:
+
+arm_cortex_a_profiling_private.h:

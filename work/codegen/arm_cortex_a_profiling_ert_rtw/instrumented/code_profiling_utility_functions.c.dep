@@ -1,0 +1,10 @@
+code_profiling_utility_functions.c.o: code_profiling_utility_functions.c \
+ code_profiling_utility_functions.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/arm_cortex_a/include/profile_timer.h \
+ rtwtypes.h
+
+code_profiling_utility_functions.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/arm_cortex_a/include/profile_timer.h:
+
+rtwtypes.h:

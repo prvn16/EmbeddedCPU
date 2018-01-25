@@ -1,0 +1,4 @@
+ASFLAGS_ADDITIONAL = -march=armv7-a -mfloat-abi=hard -mfpu=neon
+STACK_SIZE = 200000
+BusyBox_Linux_ARM_Cortex_A_QEMU = C:/PROGRA~3/MATLAB/SUPPOR~1/R2017b/ARMCOR~1
+TARGET_PKG_INSTALLDIR = C:/PROGRA~3/MATLAB/SUPPOR~1/R2017b/toolbox/target/SUPPOR~1/ARM_CO~1/registry/..

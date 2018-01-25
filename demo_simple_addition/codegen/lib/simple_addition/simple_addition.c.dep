@@ -1,0 +1,10 @@
+simple_addition.c.o: simple_addition.c rt_nonfinite.h rtwtypes.h \
+ simple_addition.h simple_addition_types.h
+
+rt_nonfinite.h:
+
+rtwtypes.h:
+
+simple_addition.h:
+
+simple_addition_types.h:

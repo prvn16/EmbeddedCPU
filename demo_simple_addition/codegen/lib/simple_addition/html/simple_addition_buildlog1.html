@@ -1,0 +1,66 @@
+<html>
+<head>
+<div class="baselog">
+<link rel="stylesheet" href="resources\\matlab-report-styles.css" type="text/css" />
+<style type="text/css" media="screen">
+div.treeview { white-space: nowrap; }
+.treeview img { border: 0px; vertical-align: middle; }
+.trigger { cursor: pointer; }
+.branch { display: none; margin-left: 22px; }
+span.lnnolink { cursor: pointer; color: blue; text-decoration: underline; padding: 1 }
+span.lnnonorm { color: grey; padding: 1 }
+span.textnorm { color: black; padding: 1 }
+span.textcmnt { color: green; padding: 1 }
+span.msglink { cursor: pointer; color: blue; text-decoration: underline }
+span.treelink { cursor: pointer; color: blue; text-decoration: underline }
+.error { color: red; }
+.fcflink { cursor: pointer; color: blue; text-decoration: underline }
+div.tooltip { visibility: hidden; position: fixed;
+  background-color: lightyellow; border: 1px solid black; }
+.td-linebottomrt-gray {border-bottom:1px solid #BBB; border-right:1px solid #BBB;background-color:#F0F0F0;}
+.td-linebottomrt-link {border-bottom:1px solid #BBB; border-right:1px solid #BBB;color:Blue;}
+</style>
+</div>
+<title>Code Generation Report For 'simple_addition'</title>
+</head>
+<body>
+<div class="report-head">MATLAB Coder Build Log</div><p/>
+<div class="baselog">
+<div class="grayline"></div>
+<table cellpadding="4" cellspacing="1"><tr>
+<td align="left" class="td-linebottomrt-gray" colspan="2">Build Parameters</td>
+</tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Build directory</td>
+<td align="left" valign="top" class="td-linebottomrt-link"><a href="matlab: cd('C:\Sumpurn\Project\sEmbeddedCPU\demo_simple_addition\codegen\lib\simple_addition')">C:\Sumpurn\Project\sEmbeddedCPU\demo_simple_addition\codegen\lib\simple_addition</a></td></tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Make wrapper</td>
+<td align="left" valign="top" class="td-linebottomrt-link">.\simple_addition_rtw.bat</td></tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Make command</td>
+<td align="left" valign="top" class="td-linebottomrt-link">"C:\PROGRA~1\MATLAB\R2017b\bin\win64\gmake"  -f simple_addition_rtw.mk all</td></tr>
+</table>
+<br/>
+<table border="1" cellpadding="4" cellspacing="1" width="100%">
+<tr><td align="left" class="td-linebottomrt-gray">Build Log</td></tr>
+<tr><td valign="top" class="td-script">
+<pre>
+<span class="td-line-number">    1   </span><span class="td-line-normal">C:/PROGRA~3/MATLAB/SUPPOR~1/R2017b/3P778C~1.INS/LINARO~2.INS/bin/arm-linux-gnueabihf-gcc -c -MMD -MP -MF"simple_addition_initialize.c.dep" -MT"simple_addition_initialize.c.o" -O2 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DARM_PROJECT -DSTACK_SIZE=200000 -DMODEL=simple_addition -DHAVESTDIO -DUSE_RTMODEL -DARM_PROJECT -DSTACK_SIZE=200000 -DMODEL=simple_addition -DHAVESTDIO -DUSE_RTMODEL -IC:/Sumpurn/Project/sEmbeddedCPU/demo_simple_addition/codegen/lib/simple_addition -IC:/Sumpurn/Project/sEmbeddedCPU/demo_simple_addition -IC:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/arm_cortex_a/include -IC:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/arm_cortex_a/blocks/sfcn/include -IC:/PROGRA~1/MATLAB/R2017b/extern/include -IC:/PROGRA~1/MATLAB/R2017b/simulink/include -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/src -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/src/ext_mode/common -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/ert -o simple_addition_initialize.c.o simple_addition_initialize.c</span>
+<span class="td-line-number">    2   </span><span class="td-line-normal">C:/PROGRA~3/MATLAB/SUPPOR~1/R2017b/3P778C~1.INS/LINARO~2.INS/bin/arm-linux-gnueabihf-gcc -c -MMD -MP -MF"simple_addition_terminate.c.dep" -MT"simple_addition_terminate.c.o" -O2 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DARM_PROJECT -DSTACK_SIZE=200000 -DMODEL=simple_addition -DHAVESTDIO -DUSE_RTMODEL -DARM_PROJECT -DSTACK_SIZE=200000 -DMODEL=simple_addition -DHAVESTDIO -DUSE_RTMODEL -IC:/Sumpurn/Project/sEmbeddedCPU/demo_simple_addition/codegen/lib/simple_addition -IC:/Sumpurn/Project/sEmbeddedCPU/demo_simple_addition -IC:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/arm_cortex_a/include -IC:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/arm_cortex_a/blocks/sfcn/include -IC:/PROGRA~1/MATLAB/R2017b/extern/include -IC:/PROGRA~1/MATLAB/R2017b/simulink/include -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/src -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/src/ext_mode/common -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/ert -o simple_addition_terminate.c.o simple_addition_terminate.c</span>
+<span class="td-line-number">    3   </span><span class="td-line-normal">C:/PROGRA~3/MATLAB/SUPPOR~1/R2017b/3P778C~1.INS/LINARO~2.INS/bin/arm-linux-gnueabihf-gcc -c -MMD -MP -MF"simple_addition.c.dep" -MT"simple_addition.c.o" -O2 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DARM_PROJECT -DSTACK_SIZE=200000 -DMODEL=simple_addition -DHAVESTDIO -DUSE_RTMODEL -DARM_PROJECT -DSTACK_SIZE=200000 -DMODEL=simple_addition -DHAVESTDIO -DUSE_RTMODEL -IC:/Sumpurn/Project/sEmbeddedCPU/demo_simple_addition/codegen/lib/simple_addition -IC:/Sumpurn/Project/sEmbeddedCPU/demo_simple_addition -IC:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/arm_cortex_a/include -IC:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/arm_cortex_a/blocks/sfcn/include -IC:/PROGRA~1/MATLAB/R2017b/extern/include -IC:/PROGRA~1/MATLAB/R2017b/simulink/include -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/src -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/src/ext_mode/common -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/ert -o simple_addition.c.o simple_addition.c</span>
+<span class="td-line-number">    4   </span><span class="td-line-normal">C:/PROGRA~3/MATLAB/SUPPOR~1/R2017b/3P778C~1.INS/LINARO~2.INS/bin/arm-linux-gnueabihf-gcc -c -MMD -MP -MF"rt_nonfinite.c.dep" -MT"rt_nonfinite.c.o" -O2 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DARM_PROJECT -DSTACK_SIZE=200000 -DMODEL=simple_addition -DHAVESTDIO -DUSE_RTMODEL -DARM_PROJECT -DSTACK_SIZE=200000 -DMODEL=simple_addition -DHAVESTDIO -DUSE_RTMODEL -IC:/Sumpurn/Project/sEmbeddedCPU/demo_simple_addition/codegen/lib/simple_addition -IC:/Sumpurn/Project/sEmbeddedCPU/demo_simple_addition -IC:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/arm_cortex_a/include -IC:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/arm_cortex_a/blocks/sfcn/include -IC:/PROGRA~1/MATLAB/R2017b/extern/include -IC:/PROGRA~1/MATLAB/R2017b/simulink/include -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/src -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/src/ext_mode/common -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/ert -o rt_nonfinite.c.o rt_nonfinite.c</span>
+<span class="td-line-number">    5   </span><span class="td-line-normal">C:/PROGRA~3/MATLAB/SUPPOR~1/R2017b/3P778C~1.INS/LINARO~2.INS/bin/arm-linux-gnueabihf-gcc -c -MMD -MP -MF"rtGetNaN.c.dep" -MT"rtGetNaN.c.o" -O2 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DARM_PROJECT -DSTACK_SIZE=200000 -DMODEL=simple_addition -DHAVESTDIO -DUSE_RTMODEL -DARM_PROJECT -DSTACK_SIZE=200000 -DMODEL=simple_addition -DHAVESTDIO -DUSE_RTMODEL -IC:/Sumpurn/Project/sEmbeddedCPU/demo_simple_addition/codegen/lib/simple_addition -IC:/Sumpurn/Project/sEmbeddedCPU/demo_simple_addition -IC:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/arm_cortex_a/include -IC:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/arm_cortex_a/blocks/sfcn/include -IC:/PROGRA~1/MATLAB/R2017b/extern/include -IC:/PROGRA~1/MATLAB/R2017b/simulink/include -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/src -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/src/ext_mode/common -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/ert -o rtGetNaN.c.o rtGetNaN.c</span>
+<span class="td-line-number">    6   </span><span class="td-line-normal">C:/PROGRA~3/MATLAB/SUPPOR~1/R2017b/3P778C~1.INS/LINARO~2.INS/bin/arm-linux-gnueabihf-gcc -c -MMD -MP -MF"rtGetInf.c.dep" -MT"rtGetInf.c.o" -O2 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DARM_PROJECT -DSTACK_SIZE=200000 -DMODEL=simple_addition -DHAVESTDIO -DUSE_RTMODEL -DARM_PROJECT -DSTACK_SIZE=200000 -DMODEL=simple_addition -DHAVESTDIO -DUSE_RTMODEL -IC:/Sumpurn/Project/sEmbeddedCPU/demo_simple_addition/codegen/lib/simple_addition -IC:/Sumpurn/Project/sEmbeddedCPU/demo_simple_addition -IC:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/arm_cortex_a/include -IC:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/arm_cortex_a/blocks/sfcn/include -IC:/PROGRA~1/MATLAB/R2017b/extern/include -IC:/PROGRA~1/MATLAB/R2017b/simulink/include -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/src -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/src/ext_mode/common -IC:/PROGRA~1/MATLAB/R2017b/rtw/c/ert -o rtGetInf.c.o rtGetInf.c</span>
+<span class="td-line-number">    7   </span><span class="td-line-normal">"### Creating static library "./simple_addition.lib" ..."</span>
+<span class="td-line-number">    8   </span><span class="td-line-normal">C:/PROGRA~3/MATLAB/SUPPOR~1/R2017b/3P778C~1.INS/LINARO~2.INS/bin/arm-linux-gnueabihf-ar -ruvs  ./simple_addition.lib simple_addition_initialize.c.o simple_addition_terminate.c.o simple_addition.c.o rt_nonfinite.c.o rtGetNaN.c.o rtGetInf.c.o</span>
+<span class="td-line-number">    9   </span><span class="td-line-normal">a - simple_addition_initialize.c.o</span>
+<span class="td-line-number">   10   </span><span class="td-line-normal">a - simple_addition_terminate.c.o</span>
+<span class="td-line-number">   11   </span><span class="td-line-normal">a - simple_addition.c.o</span>
+<span class="td-line-number">   12   </span><span class="td-line-normal">a - rt_nonfinite.c.o</span>
+<span class="td-line-number">   13   </span><span class="td-line-normal">a - rtGetNaN.c.o</span>
+<span class="td-line-number">   14   </span><span class="td-line-normal">a - rtGetInf.c.o</span>
+<span class="td-line-number">   15   </span><span class="td-line-normal">C:/PROGRA~3/MATLAB/SUPPOR~1/R2017b/3P778C~1.INS/LINARO~2.INS/bin/arm-linux-gnueabihf-ar: creating ./simple_addition.lib</span>
+<span class="td-line-number">   16   </span><span class="td-line-normal">"### Created: ./simple_addition.lib"</span>
+<span class="td-line-number">   17   </span><span class="td-line-normal">"### Successfully generated all binary outputs."</span>
+</pre>
+</td></tr></table>
+</div>
+</body>
+</html>

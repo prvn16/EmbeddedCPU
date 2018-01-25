@@ -1,0 +1,14 @@
+ert_main.c.o: ert_main.c arm_cortex_a_gettingstarted.h rtwtypes.h \
+ arm_cortex_a_gettingstarted_types.h \
+ arm_cortex_a_gettingstarted_private.h \
+ C:/PROGRA~1/MATLAB/R2017b/toolbox/target/codertarget/rtos/inc/linuxinitialize.h
+
+arm_cortex_a_gettingstarted.h:
+
+rtwtypes.h:
+
+arm_cortex_a_gettingstarted_types.h:
+
+arm_cortex_a_gettingstarted_private.h:
+
+C:/PROGRA~1/MATLAB/R2017b/toolbox/target/codertarget/rtos/inc/linuxinitialize.h:

@@ -1,0 +1,12 @@
+arm_cortex_a_gettingstarted.c.o: arm_cortex_a_gettingstarted.c \
+ arm_cortex_a_gettingstarted.h rtwtypes.h \
+ arm_cortex_a_gettingstarted_types.h \
+ arm_cortex_a_gettingstarted_private.h
+
+arm_cortex_a_gettingstarted.h:
+
+rtwtypes.h:
+
+arm_cortex_a_gettingstarted_types.h:
+
+arm_cortex_a_gettingstarted_private.h:
